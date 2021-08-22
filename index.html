@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Warner</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudfare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin="anonymous" >
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/styles.css'>
+
+</head>
+<body>
+    <header>
+        <div class='logo'>
+            <p><strong>< b/w ></b></strong></p>
+        </div>
+        <button class='nav-toggle' aria-label='toggle navigation'>
+            <span class='hamburger'></span>
+        </button>
+        <nav class='nav'>
+            <ul class='nav__list'>
+                 <li class='nav__item'><a href='#Home' class='nav__link'>Home</a></li>
+                 <li class='nav__item'><a href='#Services' class='nav__link'>Services</a></li>
+                 <li class='nav__item'><a href='#About' class='nav__link'>About Me</a></li>
+                 <li class='nav__item'><a href='#Work' class='nav__link'>My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- INTRO -->
+    <section class='intro' id='Home'>
+        <h1 class='section__title section__title--intro'>
+            Hi, I am <strong>Brandon Warner</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--intro'>FRONT-END DEVELOPER</p>
+        <img src='img/IMG_5823.JPG' alt='picture of me smiling' class="intro__img">
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class='my-services' id='Services'>
+        <h2 class='section__title section__title--services'>What I do</h2>
+        <div class='services'>
+
+            <div class='service'>
+                <h3>Design</h3>
+                <p>Focused on responsiveness of web applications to be sure users have a seemless experience. Utilizing CSS and styling libraries to help your applications look stunning.</p>
+            </div> <!-- / service -->
+
+            <div class='service'>
+                <h3>Develop</h3>
+                <p>Developing well written and testable code to make reading and debugging projects easier for myself and others.
+                    Focused on writing modular code to be able to use for other applications.
+                </p>
+            </div> <!-- / service -->
+            
+            <div class='service'>
+                <h3>Learn</h3>
+                <p>Constantly developing and improving current skillset to maximize impact for clients. Web development is not a static skill set and can always be refined.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+        <a href='#Work' class='btn'>See My Work</a>
+    </section>
+
+
+    <!-- ABOUT ME -->
+
+    <section class='about-me' id='About'>
+        <h2 class='section__title setion__title--about'>Who I am</h2>
+        <p class='section__subtitle section__subtitle--about'>Web Developer based out of Los Angeles, CA</p>
+
+        <div class='about-me--body'>
+            <p>Developer who loves building and styling applications using React with Redux, Bootstrap and Meterial UI. Has experience working with backend services such as MongoDB, GraphQL, and Apollo Server. </p>
+            <p>Looking for opportunities as a Frontend Developer to help your applications and websites look spectacular for your users and ensure a smooth user experience.</p>
+            <p>Offline, I enjoy golf, weight lifting, going to Dodger and Angels baseball games, and getting my tan on at the beach.</p>
+        </div>
+
+        <img src='img/free-guy-how-to-watch.jpeg' alt='another image of me' class='about-me__img'>
+    </section>
+
+    <!-- WORK -->
+
+    <section class='work' id='Work'>
+        <h2 class='section__title--work'>My Work</h2>
+        <p class='section__subtitle--work'>a selection of my projects</p>
+
+        <div class='portfolio'>
+            <!-- Portfolio Item 01 -->
+            <a href='#' class='portfolio__item'>
+                <img src='img/Screen Shot 2021-08-22 at 2.28.53 PM.png' alt='portfolio__img' class='portfolio__img'>
+            </a>
+
+            <!-- Portfolio Item 02 -->
+            <a href='#' class='portfolio__item'>
+                <img src='img/Screen Shot 2021-08-22 at 3.00.28 PM.png' alt='portfolio__img' class='portfolio__img'>
+            </a>
+
+            <!-- Portfolio Item 03 -->
+            <a href='#' class='portfolio__item'>
+                <img src='img/hero-21-1920x1080.jpeg' alt='portfolio__img' class='portfolio__img'>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class='footer'>
+        <a href='mailto:brandonswarner@gmail.com' class='footer__link'>brandonswarner5@gmail.com</a>
+        <ul class='social-list'>
+            <li class='social-list__item'><a href='https://github.com/Brandon-Warner' class='social-list__link'><i class="fab fa-github"></i></i></a></li>
+            <li class='social-list__item'><a href='https://www.linkedin.com/in/brandon--warner/'class='social-list__link'><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src='js/index.js'></script>
+</body>
+</html>
