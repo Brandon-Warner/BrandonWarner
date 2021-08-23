@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Warner</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudfare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin="anonymous" >
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/styles.css'>
+
+</head>
+<body>
+    <header>
+        <div class='logo'>
+            <p><strong>< b/w ></b></strong></p>
+        </div>
+        <button class='nav-toggle' aria-label='toggle navigation'>
+            <span class='hamburger'></span>
+        </button>
+        <nav class='nav'>
+            <ul class='nav__list'>
+                 <li class='nav__item'><a href='index.html' class='nav__link'>Home</a></li>
+                 <li class='nav__item'><a href='index.html#Services' class='nav__link'>Services</a></li>
+                 <li class='nav__item'><a href='index.html#About' class='nav__link'>About Me</a></li>
+                 <li class='nav__item'><a href='index.html#Work' class='nav__link'>My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INTRO -->
+
+    <section class='intro' id=''>
+        <h1 class='section__title section__title--intro'>
+            <strong>Minecraft Server Audit</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--intro'>Analysis of Minecraft KPIs</p>
+        <img src='img/Screen Shot 2021-08-23 at 11.02.05 AM.png' alt='Minecraft Project' class="intro__img">
+    </section>
+
+    <div class='portfolio-item-individual'>
+        <p>This is a tool I built for a colleague's team that monitors Minecraft Servers. In order to organize the data in an effective manner, I decided to use the React library to build reusable components for the data rows, and used the Material UI TableComponent for a smooth interface.</p>
+        
+        <img src='img/Screen Shot 2021-08-23 at 11.02.05 AM.png' alt=''>
+        <p>A .CSV file with a single column listing individual Minecraft Server urls is uploaded to the application, and an assortment of data is returned.</p>
+        <p>This allows for users to pick and choose what servers they want to investigate without any hard coded data they would need to work around. </p>
+        <p>All of the data is fetched from external APIs - links are at the bottom of the webpage if users want to know where the information originates.</p>
+        <br />
+        
+        <p>Clicking the 'MODE' button informs the user if the server is in 'offline' mode - it may be active, but not online. </p>
+            <p>This is another data fetch, but needed to happen separately from the initial data fetch to increase responsiveness. The fetch can take sometime to return data as the API host tends to crash if overloaded.</p>
+        <img src='img/Screen Shot 2021-08-23 at 11.21.24 AM.png' alt=''>
+
+        <p>The data can be refreshed, filtered by 'BLOCKED' or 'ACTIVE', and users can look up servers by name. I used Redux to easily manipulate the view based off of the selected radio button.</p>
+        <img src='img/Screen Shot 2021-08-23 at 11.24.25 AM.png' alt=''>
+        <br />
+        <img src='img/Screen Shot 2021-08-23 at 11.26.22 AM.png' alt=''>
+        <br />
+        <p>Check out the live site for yourself!</p>
+        <p><a href='https://fast-thicket-91718.herokuapp.com/'>Link to the live site.</a></p>
+    </div>
+
+    
+    <!-- FOOTER -->
+
+    <footer class='footer'>
+        <a href='mailto:brandonswarner@gmail.com' class='footer__link'>brandonswarner5@gmail.com</a>
+        <ul class='social-list'>
+            <li class='social-list__item'><a href='https://github.com/Brandon-Warner' class='social-list__link'><i class="fab fa-github"></i></i></a></li>
+            <li class='social-list__item'><a href='https://www.linkedin.com/in/brandon--warner/'class='social-list__link'><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src='js/index.js'></script>
+</body>
+</html>

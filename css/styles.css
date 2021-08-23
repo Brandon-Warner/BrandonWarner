@@ -128,7 +128,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
-    padding: 0.25em 1em;
+    padding: 0.05em 1em;
     font-family: var(--fw-reg);
     margin-bottom: 1em;
 }
@@ -459,3 +459,16 @@ header {
 .social-list__link {
     padding: 0.5em 1em;
 }
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
