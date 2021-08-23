@@ -7,10 +7,10 @@
 /* CUSTOM STYLES */
 
 :root {
-    --ff-primary: 'Titillium Web', sans-serif;
-    --ff-secondary: 'Quicksand', sans-serif;
+    --ff-primary: 'Quicksand', sans-serif;
+    --ff-secondary: 'Titillium Web', sans-serif;
 
-    --fw-reg: 300;
+    --fw-reg: 400;
     --fw-bold: 900;
 
     --clr-light: #edf5e1;
@@ -123,19 +123,23 @@ h3 {
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: 0.05em 1em;
-    font-family: var(--fw-reg);
+    font-family: var(--ff-secondary);
+
+    font-weight: var(--fw-reg);
     margin-bottom: 1em;
 }
 
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
+    font-family: var(--ff-secondary);
 }
 
 /* HEADER */
@@ -257,6 +261,10 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+}
+
+.section__title--intro {
+    padding: 0.5em 0 0 0;
 }
 
 .section__subtitle--intro {
@@ -471,4 +479,3 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
