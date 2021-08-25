@@ -301,6 +301,20 @@ header {
     }
 }
 
+/* ICONS */
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 2em;
+    
+}
+.fab{
+    margin: 1em;
+    font-size: var(--fs-h3);
+}
+
 /* MY SERVICES */
 
 .my-services {
