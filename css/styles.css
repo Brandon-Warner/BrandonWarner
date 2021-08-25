@@ -81,6 +81,7 @@ strong {
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
 }

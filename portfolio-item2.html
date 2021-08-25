@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Warner</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudfare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin="anonymous" >
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/styles.css'>
+
+</head>
+<body>
+    <header>
+        <div class='logo'>
+            <p><strong>< b/w ></b></strong></p>
+        </div>
+        <button class='nav-toggle' aria-label='toggle navigation'>
+            <span class='hamburger'></span>
+        </button>
+        <nav class='nav'>
+            <ul class='nav__list'>
+                 <li class='nav__item'><a href='index.html' class='nav__link'>Home</a></li>
+                 <li class='nav__item'><a href='index.html#Services' class='nav__link'>Services</a></li>
+                 <li class='nav__item'><a href='index.html#About' class='nav__link'>About Me</a></li>
+                 <li class='nav__item'><a href='index.html#Work' class='nav__link'>My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INTRO -->
+
+    <section class='intro' id=''>
+        <h1 class='section__title section__title--intro'>
+            <strong>Bloglist Application</strong>
+        </h1>
+        <p class='section__subtitle section__subtitle--intro'>Store links to your favorite articles</p>
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.49.17 PM.png' alt='Bloglist App' class="intro__img">
+    </section>
+
+    <div class='portfolio-item-individual'>
+        <p>This application works as a blog library to store links to web articles. My goal was to mimic a social media site where there are multiple users who can interact with content - in this case, user's can like and comment on other blogs.</p>
+
+        <p>I used the React library to build the out components that could be reused and the React Bootstrap UI library to create a social media aesthetic -- Bootstrap was created by Twitter, after all!</p>
+
+        <p>Node and Express are used in the backend with REST APIs sending data between the server and database.</p>
+
+        <p>User and Blog data is stored in a MongoDB database - the document database model made it very flexible to store multiple comments per blog.</p>
+
+        <br />
+
+        <p>The login page is short and sweet. There is username and password verification built with JSON Web Token. I needed user information to persist throughout the web app and JSON Web Token makes it very easy to authorize information and keep data in local storage.</p>
+
+       
+        
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.59.46 PM.png' alt='login'>
+        
+       
+        
+        <p>An error notification will show if login credentials are incorrect.</p>
+
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.47.00 PM.png' alt='login error'>
+
+        <p>After logging in with correct credentials, a message displays welcoming you to the application.</p>
+        <p>The user's name is displayed in the navbar with a logout option that can be clicked at any time.</p>
+        <p>The home page has instructions to click on the USERS or BLOGS links in the navbar.</p>
+
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 5.00.16 PM.png' alt='login success'>
+
+        <p>Clicking the USERS link will bring you to a page displaying each user and the number of blogs they have added.</p>
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.48.48 PM.png' alt='users'>
+       
+        <p>The user name is a link to the individual user page that lists the title of each of the user's added blogs.</p>
+
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.49.02 PM.png' alt='user'>
+
+        <p>The BLOGS navbar link will take you to the page that lists all blogs added by all users.</p>
+
+        <p>Each blog title is a link to its own page. This was built using the React Router DOM library.</p>
+       
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.49.17 PM.png' alt='blogs'>
+        <br />
+
+        <p>Clicking the NEW BLOG button will toggle a form to add a new blog to the list.</p>
+
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.49.32 PM.png' alt='new blog'>
+        <p>The individual blog page allows users to like and comment on the blog.</p>
+        <p>A blog can only be deleted by the user who created the post.</p>
+
+        <img src='img/PortfolioItem2imgs/Screen Shot 2021-08-24 at 3.49.57 PM.png' alt='blog'>
+
+        <br />
+
+        <p>As of now, this project is not live - you can copy the repo from <a href='https://github.com/Brandon-Warner/Bloglist-App'>GitHub</a>.</p> 
+        
+    </div>
+
+    
+    <!-- FOOTER -->
+
+    <footer class='footer'>
+        <a href='mailto:brandonswarner@gmail.com' class='footer__link'>brandonswarner5@gmail.com</a>
+        <ul class='social-list'>
+            <li class='social-list__item'><a href='https://github.com/Brandon-Warner' class='social-list__link'><i class="fab fa-github"></i></i></a></li>
+            <li class='social-list__item'><a href='https://www.linkedin.com/in/brandon--warner/'class='social-list__link'><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src='js/index.js'></script>
+</body>
+</html>
