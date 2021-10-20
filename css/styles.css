@@ -494,9 +494,14 @@ header {
     margin-right: auto;
 }
 
-video#video {
+#video {
     width: 110%;
     height: 600px;
     object-fit: cover;
-    z-index: -100;
+    overflow: hidden;
+}
+
+#video > video {
+    min-width: 100%;
+    min-height: 100%;
 }
