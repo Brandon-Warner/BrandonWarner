@@ -303,14 +303,13 @@ header {
 
 /* ICONS */
 
-.icons{
+.icons {
     display: flex;
     justify-content: center;
     margin-top: 0;
     margin-bottom: 2em;
-    
 }
-.fab{
+.fab {
     margin: 1em;
     font-size: var(--fs-h3);
 }
@@ -493,4 +492,10 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#video {
+    width: 110%;
+    height: 600px;
+    object-fit: cover;
 }
