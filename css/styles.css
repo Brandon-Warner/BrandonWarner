@@ -314,6 +314,23 @@ header {
     font-size: var(--fs-h3);
 }
 
+/* LOGOS */
+
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.tab {
+    margin: 1em;
+    font-size: var(--fs-h4);
+    height: 150px;
+    width: 150px;
+}
+
+
 /* MY SERVICES */
 
 .my-services {
