@@ -9,13 +9,13 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoMojang from '@/images/logos/Microsoft_logo.png'
+import logoOkta from '@/images/logos/Okta.png'
+import logoCarson from '@/images/logos/carsonoil.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
+import image3 from '@/images/photos/DSC06411.JPEG'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { getAllArticles } from '@/lib/articles'
@@ -172,35 +172,28 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Okta',
+      title: 'Auth0 Solutions Engineer',
+      logo: logoOkta,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Microsoft',
+      title: 'Software Developer',
+      logo: logoMojang,
+      start: '2021',
+      end: '2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Carson Oil',
+      title: 'Business Analyst',
+      logo: logoCarson,
+      start: '2019',
+      end: '2021',
     },
   ]
 
@@ -261,9 +254,16 @@ export default async function Home() {
             Brandon Warner - Solutions Engineer @ Auth0, problem solver, and amateur photographer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hi, I'm Brandon — Solutions Engineer & Problem-Solver at Heart. I help businesses bridge the gap between complex technology and real-world impact.
-          I excel at understanding client needs and translating technical concepts into business value. My collaborative approach ensures solutions are not just technically sound but aligned with organizational goals.
+          Hi, I'm Brandon — Solutions Engineer & problem-solver at Heart. As a youngster, I was always tinkering with puzzles and finding patterns within math and words problems, which has blossomed into a curiousity that I carry with me today in all aspects of life. 
           </p>
+
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          After graduating from the University of Oregon, where I achieved a BS in Finance, I pivoted my career upon discovering the vital function of how data is used and interpretted in business context and the power of technology to solve real-world problems. After careful consideration, I decided to pursue a career in Software Development, and went on to become a self-taught Software Engineer.
+          </p>
+
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          Taking the importance of technology in a business context and my technical knowledge of Software Development, I help businesses bridge the gap between complex technology and real-world impact.
+          I excel at understanding client needs and translating technical concepts into business value. My collaborative approach ensures solutions are not just technically sound but aligned with organizational goals.</p>
           <div className="mt-6 flex gap-6">
             
             <SocialLink
