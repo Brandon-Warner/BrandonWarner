@@ -253,16 +253,15 @@ export default async function Home() {
             Brandon Warner - Solutions Engineer @ Auth0, problem solver, and amateur photographer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hi, I'm Brandon — Solutions Engineer & problem-solver at heart. As a youngster, I was always tinkering with puzzles and finding patterns within math and words problems, which has blossomed into a curiousity that permeated into all aspects of life.
+          Hi, I'm Brandon — a Solutions Engineer and problem-solver at heart. From an early age, I was naturally drawn to puzzles and finding patterns in math and word problems, cultivating a curiosity that now permeates all aspects of my life.
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          After graduating from the University of Oregon, where I achieved a BS in Finance, I pivoted my career to technology upon discovering the vital function of how data is used and interpretted in business context to solve real-world problems. After careful consideration, I decided to pursue a career in Software Development, and went on to become a self-taught Software Engineer.
+          After earning my BS in Finance from the University of Oregon, I recognized how data interpretation drives business decision-making and solves real-world problems. This insight inspired me to pivot toward technology, ultimately becoming a self-taught Software Engineer.
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Taking the importance of technology in a business context and my technical knowledge of in software, I now help businesses bridge the gap between complex technology and real-world impact as a Solutions Engineer.
-          I excel at understanding client needs and translating technical concepts into business value. My collaborative approach ensures solutions are not just technically sound but aligned with organizational goals.</p>
+          Today, I leverage both my technical expertise and business background to help organizations bridge the gap between complex technology and tangible business outcomes. As a Solutions Engineer, I excel at understanding client needs and translating technical concepts into clear business value. My collaborative approach ensures that solutions aren't just technically sound but fully aligned with organizational goals and objectives.</p>
           <div className="mt-6 flex gap-6">
             
             <SocialLink
