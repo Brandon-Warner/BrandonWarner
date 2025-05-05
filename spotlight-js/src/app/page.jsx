@@ -7,9 +7,7 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
@@ -235,14 +233,14 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-9/10 w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+              'relative aspect-9/10 w-54 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
             )}
           >
             <Image
               src={image}
               alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
+              sizes="(min-width: 660px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
@@ -260,7 +258,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Solutions Engineer at Okta/Auth0
+            Brandon Warner - Solutions Engineer @ Auth0, problem solver, and amateur photographer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           Hi, I'm Brandon — Solutions Engineer & Problem-Solver at Heart. I help businesses bridge the gap between complex technology and real-world impact.
