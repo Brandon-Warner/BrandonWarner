@@ -250,18 +250,13 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Brandon Warner - problem solver, and amateur photographer
+            Solutions engineer, problem solver, and amateur photographer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hi, I'm Brandon — a Solutions Engineer and problem-solver at heart. From an early age, I was naturally drawn to puzzles and finding patterns in math and word problems, cultivating a curiosity that now permeates all aspects of my life.
+          Hi, I'm Brandon — Solutions Engineer @ Auth0 where I help customers build secure, modern, and scalable applications. 
+
           </p>
 
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          After earning my BS in Finance from the University of Oregon, I recognized how data interpretation drives business decision-making and solves real-world problems. This insight inspired me to pivot toward technology, ultimately becoming a self-taught Software Engineer.
-          </p>
-
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Today, I leverage both my technical expertise and business background to help organizations bridge the gap between complex technology and tangible business outcomes. As a Solutions Engineer, I excel at understanding client needs and translating technical concepts into clear business value. My collaborative approach ensures that solutions aren't just technically sound but fully aligned with organizational goals and objectives.</p>
           <div className="mt-6 flex gap-6">
             
             <SocialLink
