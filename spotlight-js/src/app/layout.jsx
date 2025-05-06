@@ -1,6 +1,6 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-
+import avatarLogo from '@/images/img/PhotoGallery/IMG_0015.JPEG'
 import '@/styles/tailwind.css'
 
 export const metadata = {

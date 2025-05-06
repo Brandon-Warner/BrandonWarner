@@ -9,7 +9,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoMojang from '@/images/logos/Microsoft_logo.png'
+import logoMojang from '@/images/logos/mojang.png'
 import logoOkta from '@/images/logos/Okta.png'
 import logoCarson from '@/images/logos/carsonoil.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
@@ -181,7 +181,7 @@ function Resume() {
       },
     },
     {
-      company: 'Microsoft',
+      company: 'Mojang Studios',
       title: 'Software Developer',
       logo: logoMojang,
       start: '2021',
@@ -260,12 +260,12 @@ export default async function Home() {
           <div className="mt-6 flex gap-6">
             
             <SocialLink
-              href="#"
+              href="https://github.com/Brandon-Warner"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/brandon--warner/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
