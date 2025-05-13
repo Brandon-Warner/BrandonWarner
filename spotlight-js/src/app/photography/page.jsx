@@ -4,6 +4,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image'
+import { listPhotos } from '@/utils/s3';
 
 
 import image1 from './pics/DSC01103.JPEG'
@@ -20,6 +21,7 @@ import image10 from './pics/DSC02049.JPEG'
 
 function PhotoGallery() {
 const photos = [image1, image2, image3, image4, image5]
+listPhotos(process.env.NEXT_PUBLIC_S3_BUCKET_NAME)
 
   return (
     <div className="bg-white py-24 sm:py-32">
