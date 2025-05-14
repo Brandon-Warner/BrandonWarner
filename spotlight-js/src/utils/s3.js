@@ -24,7 +24,7 @@ export async function listPhotos(bucketName, prefix = '') {
     })
 
     const { Contents } = await s3Client.send(command)
-    console.log('Contents: ', Contents)
+    // console.log('Contents: ', Contents)
     return Contents || []
   } catch (error) {
     console.error('Error listing photos:', error)

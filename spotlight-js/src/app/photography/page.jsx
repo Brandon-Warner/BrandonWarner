@@ -4,7 +4,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image'
-import { listPhotos } from '@/utils/s3';
+import { listPhotos, getPhotoUrl } from '@/utils/s3';
 
 
 import image1 from './pics/DSC01103.JPEG'
@@ -19,74 +19,31 @@ import image9 from './pics/DSC01870.JPEG'
 import image10 from './pics/DSC02049.JPEG'
 
 
-function PhotoGallery() {
-const photos = [image1, image2, image3, image4, image5]
-listPhotos(process.env.NEXT_PUBLIC_S3_BUCKET_NAME)
+async function PhotoGallery() {
+const photos = await listPhotos(process.env.NEXT_PUBLIC_S3_BUCKET_NAME);
+
+const photosWithUrl= await Promise.all(
+  photos.map(async (photo) => ({
+    
+    ...photo,
+    url: await getPhotoUrl(process.env.NEXT_PUBLIC_S3_BUCKET_NAME, photo.Key),
+  }))
+);
 
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        {/* {photos.map((photo, index) => {
+         {photosWithUrl.map((photo, index) => {
+          console.log('photo: ', photo);
           <Image
-          key={index}
-          alt={`photo ${index + 1}`}
-          src={photo}
+          key={photo.Key}
+          alt={photo.title}
+          src={photo.url}
           className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
         />
-        })} */}
-          <Image
-          src={image1}
-          alt="image1"
-          className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-        />
-    
-       
-           <Image 
-            alt="image2"
-            src={image2}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />
-          <Image
-            alt="Statamic"
-            src={image3}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />
-          <Image
-            alt="Statamic"
-            src={image4}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />
-          <Image
-            alt="Statamic"
-            src={image5}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />
-          <Image
-            alt="Statamic"
-            src={image6}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />
-          <Image
-            alt="Statamic"
-            src={image7}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />  
-          <Image
-            alt="Statamic"
-            src={image8}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />  
-          <Image
-            alt="Statamic"
-            src={image9}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />  
-          <Image
-            alt="Statamic"
-            src={image10}
-            className="col-span-2 col-start-2 max-h-33vw w-full object-contain sm:col-start-auto lg:col-span-1"
-          />  
+        })} 
+          
         </div>
       </div>
     </div>
