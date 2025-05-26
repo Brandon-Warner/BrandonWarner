@@ -4,6 +4,8 @@ import {
   ListObjectsV2Command,
 } from '@aws-sdk/client-s3'
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner'
+import Amplify from 'aws-amplify'
+import { Storage } from 'aws-amplify'
 
 // Initialize the S3 client with your credentials
 const s3Client = new S3Client({
@@ -25,7 +27,8 @@ export async function listPhotos(bucketName, prefix = '') {
 
     const { Contents } = await s3Client.send(command)
     // console.log('Contents: ', Contents)
-    return Contents || []
+    const newContents = Contents.filter((_, index) => index !== 0)
+    return newContents || []
   } catch (error) {
     console.error('Error listing photos:', error)
     throw error
