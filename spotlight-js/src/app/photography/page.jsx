@@ -1,13 +1,6 @@
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import fs from 'fs';
-import path from 'path';
 import Image from 'next/image'
 import { listPhotos, getPhotoUrl } from '@/utils/s3';
-
-
-
 
 
 
@@ -32,6 +25,7 @@ const photosWithUrl= await Promise.all(
             alt={photo.Key}
             width={500}
             height={500}
+            loading="eager"
             className="object-cover object-center group-hover:opacity-75"
             />
         ))}

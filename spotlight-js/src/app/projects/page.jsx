@@ -3,46 +3,30 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoBookshelf from '@/images/logos/bookshelf-svgrepo-com.svg'
+import logoPlanetaria from '@/images/logos/mojang.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Minecraft Server Sweep',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'Analyze Minecraft server performance and optimization.',
+    link: { href: 'https://github.com/Brandon-Warner/minecraft-server-audit-production', label: 'github.com' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Blogslist',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Store links to your favorite blogs.',
+    link: { href: 'https://github.com/Brandon-Warner/Bloglist-App', label: 'github.com' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Bookshelf',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Your personal digital library',
+    link: { href: 'https://github.com/Brandon-Warner/Bookshelf-client', label: 'github.com' },
+    logo: logoBookshelf,
   },
 ]
 
