@@ -17,7 +17,7 @@ const photosWithUrl= await Promise.all(
   return (
     <div className="bg-white py-24 sm:py-32 dark:bg-zinc-800" >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-12 md:grid-cols-2 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-12 md:grid-cols-2 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         {photosWithUrl.map((photo, index) => (
           <Image
             key={photo.Key}
