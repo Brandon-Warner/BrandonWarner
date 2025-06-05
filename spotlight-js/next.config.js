@@ -4,6 +4,9 @@ module.exports = {
       `${process.env.NEXT_PUBLIC_S3_BUCKET_NAME}.s3.${process.env.NEXT_PUBLIC_AWS_REGION}.amazonaws.com`,
       's3.amazonaws.com',
     ],
+
+    unoptimized: true,
+
     // or for newer Next.js versions:
     remotePatterns: [
       {
@@ -23,4 +26,6 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  trailingSlash: true,
 }
