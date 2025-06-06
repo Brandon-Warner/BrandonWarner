@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { listPhotos, getPhotoUrl } from '../../../utils/s3'
 
+export const dynamemic = 'force-dynamic'
+
 export async function GET(request) {
   try {
     const { searchParams } = new URL(request.nextUrl.searchParams)
