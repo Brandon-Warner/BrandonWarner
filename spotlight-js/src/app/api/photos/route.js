@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server'
 import { listPhotos, getPhotoUrl } from '../../../utils/s3'
 
-export const dynamemic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 
 export async function GET(request) {
   try {
-    const { searchParams } = new URL(request.nextUrl.searchParams)
+    const { searchParams } = new URL(request.url)
     const action = searchParams.get('action')
     const bucketName =
       searchParams.get('bucketName') || process.env.S3_BUCKET_NAME
