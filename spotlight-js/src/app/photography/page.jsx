@@ -44,7 +44,7 @@ export const metadata = {
 export default function Uses() {
   return (
     <SimpleLayout
-      title="Photos"
+      title="Moments captured..."
       intro="Photography has become a new hobby while traveling - here are my favorites from Mexico City, San Francisco, Italy, and New York!"
     >
       <PhotoGallery />
